@@ -1,0 +1,89 @@
+.pokeWrapper{
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    background-color: greenyellow;
+    border: 8px solid green;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border-radius: 1rem;
+}
+
+.pokeWrapper img{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 180px;
+    height: auto;
+    top:1.5rem;
+}
+
+.pokemonCard{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: white;
+    width: 100%;
+    height: 14rem;
+    padding: .5rem;
+    border-radius: 0 0 0.75rem 0.75rem;
+
+}
+
+.pokeInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokeName{
+    font-size: 22px;
+    text-align: center;
+    margin: 1rem 0 0 0;
+}
+
+.pokeType{
+    font-size: 18px;
+}
+
+.pokeStats{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.pokeStats li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .4rem 2rem;
+    font-size: 20px;
+}
+
+@media screen and (min-width:768px) {
+
+.pokeWrapper{
+    align-items: center;
+    width: calc(48% - 1rem);
+}
+}
+
+@media screen and (min-width:992px) {
+.pokeWrapper{
+    width: calc(31.33% - 1rem);
+}
+}
+
+@media screen and (min-width:1024px) {
+.pokeWrapper{
+    width: calc(22% - 1rem);
+}
+
+.pokeStats li{
+    margin: .4rem 1rem;
+}
+}

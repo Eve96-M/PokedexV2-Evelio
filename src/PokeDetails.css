@@ -1,0 +1,180 @@
+.pokemonWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 90%;
+    max-width: 750px;
+    height: 600px;
+    margin: 2rem 1rem 2rem 1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.pInfo img {
+    position: absolute;
+    width: 150px;
+    top: 4rem;
+}
+
+.pType {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    padding: 1rem 2.5rem;
+}
+
+.id {
+    border: 1px solid gray;
+    padding: .1rem;
+}
+
+.pData {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: .5rem;
+    font-size: 12px;
+}
+
+.pData span {
+    font-weight: 200;
+}
+
+.pDetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.pDetails h3{
+    margin-bottom: .5rem;
+}
+
+.Types {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: 13px;
+    align-items: center;
+}
+
+.Types li {
+    margin: .2rem 2rem;
+    padding: 0.2rem;
+    width: 5rem;
+    color:white;
+    font-weight: bold;
+}
+
+.Abilities {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: 13px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Abilities li {
+    border: 1px solid rgb(214, 214, 214);
+    margin: .2rem 2rem;
+    padding: 0.2rem;
+    width: 6rem;
+    font-weight: bold;
+}
+
+.pStats {
+    background-color: white;
+    width: 100%;
+    padding: 1rem 2.5rem;
+}
+
+.Bars {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.Bars span{
+    font-weight: bold;
+}
+
+.statBar {
+    position: relative;
+    height: 18px;
+    width: 100%;
+    margin-bottom:1rem ;
+}
+
+.statBar::before {
+    content: '';
+    position: absolute;
+    background-color: gray;
+    height: 18px;
+    width: 100%;
+}
+
+.progress {
+    position: relative;
+    height: 18px;
+    z-index: 5;
+    background: linear-gradient(270deg, rgba(255,124,0,1) 4%, rgba(218,128,0,1) 54%, rgba(255,164,65,1) 100%);
+}
+
+.pMovements{
+    display: flex;
+    width: 90%;
+    max-width: 750px ;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.moveList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 1rem;
+}
+
+.moveList li{
+    border: transparent;
+    background-color: rgba(202, 200, 200, 0.774);
+    border-radius: 1rem;
+    margin: .5rem;
+    padding: .5rem
+}
+
+
+@media screen and (min-width:576px) {
+    .pInfo {
+        height: 580px;
+    }
+
+    .Types {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .Types li {
+        margin: .5rem;
+    }
+
+    .Abilities {
+        flex-direction: row;
+    }
+
+    .Abilities li {
+        margin: .5rem;
+    }
+
+}

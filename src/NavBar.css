@@ -1,0 +1,45 @@
+.navBar {
+    display: flex;
+    position: relative;
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    margin-bottom: .5rem;
+}
+
+.navAccent {
+    height: 50px;
+    width: 100%;
+    background-color: red;
+}
+
+.logo {
+    width: 260px;
+    margin-left: 1rem;
+}
+
+.nav-Btn {
+    display: flex;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    background-color: black;
+    border: 6px solid white;
+    
+}
+
+.btn-Wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 2.3rem;
+    margin: 0 2rem 0 1rem;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    background-color: black;
+    align-self: flex-end;
+    z-index: 10;
+}
